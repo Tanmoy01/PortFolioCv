@@ -1,0 +1,14 @@
+{
+    "name": "Tanmoy Barui Portfolio",
+    "short_name": "Portfolio",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#000000",
+    "theme_color": "#0ef",
+    "description": "Tanmoy Barui's Portfolio Website",
+    "icons": [
+      { "src": "ic.png", "type": "image/png", "sizes": "192x192" },
+      { "src": "ic.png", "type": "image/png", "sizes": "512x512" }
+    ]
+  }
+  
