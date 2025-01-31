@@ -18,16 +18,14 @@ window.addEventListener("scroll",() =>{
 })
  
 
-// Select all sections and nav links
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".navbar a");
 
-// Scroll Event Listener
 window.addEventListener("scroll", () => {
   let scrollPosition = window.scrollY;
 
   sections.forEach((section) => {
-    const sectionTop = section.offsetTop - 60; // Adjust for sticky header height
+    const sectionTop = section.offsetTop - 60;
     const sectionHeight = section.offsetHeight;
 
     if (
@@ -48,21 +46,18 @@ window.addEventListener("scroll", () => {
 // Click Event Listener
 navLinks.forEach((link) => {
   link.addEventListener("click", (event) => {
-    event.preventDefault(); // Prevent default anchor click behavior
+    event.preventDefault();
 
-    const targetId = link.getAttribute("href").substring(1); // Get target section ID
+    const targetId = link.getAttribute("href").substring(1);
     const targetSection = document.getElementById(targetId);
 
-    // Scroll smoothly to the section
     targetSection.scrollIntoView({ behavior: "smooth" });
 
-    // Update active class on click
     navLinks.forEach((navLink) => navLink.classList.remove("active"));
     link.classList.add("active");
   });
 });
 
-// Initialize ScrollReveal
 const srtop = ScrollReveal({
   origin: "top", // Animation origin
   distance: "80px", // Distance moved
@@ -70,7 +65,6 @@ const srtop = ScrollReveal({
   reset: true, // Animation repeats on re-scroll
 });
 
-// Apply ScrollReveal to all sections
 srtop.reveal("section", {
   interval: 200, // Delay between animations
 });
