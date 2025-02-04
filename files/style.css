@@ -172,12 +172,13 @@ body {
 }
 
 .responsive {
-  width: 90%;
-  height: auto;
-  border-top-left-radius: 260px;
-  border-top-right-radius: 260px;
-  border-bottom-left-radius: 260px;
-  border-bottom-right-radius: 260px;
+  width: 85%;
+    height: auto;
+    border-top-left-radius: 260px;
+    border-top-right-radius: 260px;
+    border-bottom-left-radius: 260px;
+    border-bottom-right-radius: 260px;
+    margin-left: 2rem;
 }
 
 /*about*/
